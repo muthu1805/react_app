@@ -21,7 +21,7 @@ export default function Create() {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
         localStorage.setItem("checkboxe", checkbox);
-        addToast('Saved Successfully', { appearance: 'success' });
+        // addToast('Saved Successfully', { appearance: 'success' });
     }
 
     const cleardata = () => {   
