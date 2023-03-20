@@ -5,8 +5,9 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 import Nav from './components/Nav';
-
-// import Login from './components/login';
+import 'react-toastify/dist/ReactToastify.css';
+import {toast} from 'react-toastify';
+import Index from './components/student/Index';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="/navbar" element={<Navbar />}/>
         <Route path="/nav" element={<Nav />}/>
+        <Route path="/index" element={<Index />}/>
       </Routes>
     </BrowserRouter>
     </div>

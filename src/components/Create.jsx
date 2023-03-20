@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
-import { ToastProvider, useToasts } from 'react-toast-notifications';
-
+import {toast} from 'react-toastify';
 
 export default function Create() {
     
@@ -21,7 +20,10 @@ export default function Create() {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
         localStorage.setItem("checkboxe", checkbox);
-        addToast('Saved Successfully', { appearance: 'success' });
+       
+        toast.success('Success Notification !', {
+            position: toast.POSITION.TOP_RIGHT
+        });
     }
 
     const cleardata = () => {   

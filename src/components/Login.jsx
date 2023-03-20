@@ -3,7 +3,7 @@ import React, { useState,useEffect } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import {toast} from 'react-toastify';
   
 export default function Login() {
       const navigate = useNavigate();
@@ -24,7 +24,9 @@ export default function Login() {
               }
               else{
                 alert('authentcation failed');
-
+                toast.success('Success Notification !', {
+                    position: toast.POSITION.TOP_RIGHT
+                });
               }
         }
         
