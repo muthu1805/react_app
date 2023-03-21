@@ -20,10 +20,14 @@ export default function Create() {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
         localStorage.setItem("checkboxe", checkbox);
+<<<<<<< HEAD
        
         toast.success('Success Notification !', {
             position: toast.POSITION.TOP_RIGHT
         });
+=======
+        // addToast('Saved Successfully', { appearance: 'success' });
+>>>>>>> e4b51aa395f447e3d997bb08deb24b6e16758351
     }
 
     const cleardata = () => {   
